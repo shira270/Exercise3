@@ -1,7 +1,7 @@
 import java.util.Random;
 import java.util.Scanner;
 
-public class FIX99 {
+public class Exercise9 {
         public static void main(String[] args) {
             Random randomNumber = new Random();
             int secretCode;
