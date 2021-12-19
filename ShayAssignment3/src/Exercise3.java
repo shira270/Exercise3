@@ -1,11 +1,13 @@
-public class Exercise3 {
-    public static void main(String[] args) {
-        System.out.println(dividesNumber(18));
+public static void main(String[] args) {
 
-
+    //check
+        for (int i = 0; i <arrayLength(54) ; i++) {
+          
+           System.out.println(dividesNumber(54)[i]);
+        }
     }
 
-    public static int dividesNumber(int number) {
+    public static int [] dividesNumber(int number) {
 
         int[] primaryFactors = new int[arrayLength(number)];
         int prime = 2;
@@ -19,9 +21,8 @@ public class Exercise3 {
                 prime++;
             }
         }
-        return prime;
+        return primaryFactors;
     }
-
     public static int arrayLength(int number) {
         int prime = 2;
         int counter = 0;
@@ -35,5 +36,4 @@ public class Exercise3 {
         }
         return counter;
     }
-}
 
